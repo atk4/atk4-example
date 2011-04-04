@@ -63,9 +63,6 @@ class Frontend extends ApiFrontend {
         // $m=$this->add('Menu',null,'Menu',array('view/mymenu'));
 
 
-        // Checks for ATK upgrades and shows current version
-        $this->add('UpgradeChecker',null,'version');
-
         // You need to call initLayout which will determine current page and load
         // respective page/...php class.
         $this->initLayout();
