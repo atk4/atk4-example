@@ -1,0 +1,8 @@
+/blog
+config.php
+.htaccess
+.*swp
+*.bak
+upload
+distfiles
+.DS_Store
