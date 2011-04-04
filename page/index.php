@@ -5,7 +5,14 @@ class page_index extends Page {
         $p=$this;
 
 
-        $p->add('Button',null,'SampleButton')->js('click')->univ()->alert('JavaScript / jQuery / Univ Works!');
+        // Paste some code here for quick-start
+
+        $p->add('Button')
+            ->js('click')->univ()
+            ->alert('JavaScript / jQuery / Univ Works!');
+
+
+
 
     }
 

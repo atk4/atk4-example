@@ -31,12 +31,11 @@ class Frontend extends ApiFrontend {
 			;
 
 		// If you wish to restrict actess to your pages, use BasicAuth class
-        /*
 		$this->add('BasicAuth')
 			->allow('demo','demo')
-			->check()
+            // use check() and allowPage for white-list based auth checking
+			//->check()
 			;
-         */
 
 
         // Initialize objects which you want to see on ALL of your pages in this method
@@ -51,6 +50,8 @@ class Frontend extends ApiFrontend {
 		$m=$this->add('Menu',null,'Menu');
 		$m->addMenuItem('Welcome','index');
 		$m->addMenuItem('How Do I..?','how');
+		$m->addMenuItem('Database Test','dbtest');
+		$m->addMenuItem('Auth test','authtest');
 		$m->addMenuItem('about');
 		$m->addMenuItem('logout');
 
