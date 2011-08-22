@@ -55,12 +55,4 @@ class Frontend extends ApiFrontend {
             ->addMenuItem('logout')
             ;
     }
-
-    function page_pref($p){
-        $this->dbConnect();
-                
-        // This is example of how you can use form with MVC support
-        $p->frame('Preferences')->add('MVCForm')
-            ->setController('Controller_User');
-    }
 }
