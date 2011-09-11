@@ -48,11 +48,15 @@ class Frontend extends ApiFrontend {
         // it and place in a separate class
         $this->add('Menu',null,'Menu')
             ->addMenuItem('Welcome','index')
+            ->addMenuItem('Examples','examples')
             ->addMenuItem('How Do I..?','how')
             ->addMenuItem('Database Test','dbtest')
             ->addMenuItem('Auth test','authtest')
-            ->addMenuItem('about')
             ->addMenuItem('logout')
             ;
+    }
+    function page_examples($p){
+        header('Location: '.$this->pm->base_path.'examples');
+        exit;
     }
 }
