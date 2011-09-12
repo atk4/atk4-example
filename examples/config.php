@@ -6,3 +6,4 @@ $config['dsn']='mysql://root:root@localhost/examples';
 
 $config['url_postfix']='';
 $config['url_prefix']='';
+$config['auth']['salt']='secret';
