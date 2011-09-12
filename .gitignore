@@ -1,5 +1,5 @@
 /blog
-config.php
+/config.php
 .htaccess
 .*swp
 *.bak
