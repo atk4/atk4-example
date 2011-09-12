@@ -18,6 +18,6 @@ class page_admin extends Page {
         $this->api->auth->check();
 
         $crud = $this->add('CRUD');
-        $crud->setModel('BLogPost');
+        $crud->setModel('BlogPost');
     }
 }
