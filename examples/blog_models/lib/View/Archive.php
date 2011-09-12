@@ -4,6 +4,10 @@
   * once but is used several times in the application
   */
 class View_Archive extends AbstractView {
+    function init(){
+        parent::init();
+        $this->setModel('BlogPost');
+    }
 
     /** 
       * This view uses 2 templates. Main one is $this->template, which is determined
@@ -24,8 +28,9 @@ class View_Archive extends AbstractView {
         // Clean contents of List tag, before we will be adding data into it
         $this->template->del('List');
 
-        // get entries this month from database
-        $data=$this->api->db->dsql()->table('blog_post')
+        // Fetch dynamic query from model. This automatically assigns conditions,
+        // joins and other stuff we shouldn't worry about in the UI section
+        $data=$this->getModel()->dsql()
             ->field('*')
             ->where('month(date)',date('m',$date))
             ->do_getAllHash();

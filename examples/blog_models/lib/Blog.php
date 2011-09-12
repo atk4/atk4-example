@@ -5,6 +5,14 @@ class Blog extends ApiFrontend {
 
         $this->dbConnect();
 
+        $this->addLocation('../atk4-addons',array(
+                    'php'=>array(
+                        'mvc',
+                        'misc/lib',
+                        )
+                    ))
+            ->setParent($this->pathfinder->atk_location);
+
         $menu = $this->add('Menu',null,'Menu');
         $menu->addMenuItem('Blog','index');
         $menu->addMenuItem('admin');
