@@ -67,7 +67,7 @@ class page_admin extends Page {
         $form->setFormClass('vertical');
         $form->addField('line','title');
         $form->addField('text','body');
-        $form->addField('datePicker','date');
+        $form->addField('DatePicker','date');
         $form->addSubmit();
         $form->addButton('Cancel')->js('click')->univ()->redirect('..');
 
