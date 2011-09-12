@@ -1,6 +1,6 @@
 /blog
 /config.php
-.htaccess
+/.htaccess
 .*swp
 *.bak
 upload
