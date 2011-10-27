@@ -6,4 +6,4 @@
 	url = git://github.com/atk4/atk4-addons.git
 [submodule "examples/dvdrental"]
 	path = examples/dvdrental
-	url = git@github.com:atk4/dvdrental.git
+	url = git://github.com/atk4/dvdrental.git
