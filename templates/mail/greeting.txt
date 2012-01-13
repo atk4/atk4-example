@@ -1,0 +1,11 @@
+<?from?>hello@example.com<?/from?>
+<?subject?>Welcome to our company<?/?>
+<?body?>
+
+Dear, <?$name?>
+
+We love to see you as a member of our team! I hope you will
+find your first day exciting!
+
+<?sign?>
+<?/sign?><?/body?>

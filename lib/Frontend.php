@@ -54,6 +54,25 @@ class Frontend extends ApiFrontend {
             ->addMenuItem('Auth test','authtest')
             ->addMenuItem('logout')
             ;
+
+        $this->addLayout('UserMenu');
+    }
+    function layout_UserMenu(){
+        if($this->auth->isLoggedIn()){
+            $this->add('Text',null,'UserMenu')
+                ->set('Hello, '.$this->auth->get('username').' | ');
+            $this->add('HtmlElement',null,'UserMenu')
+                ->setElement('a')
+                ->set('Logout')
+                ->setAttr('href',$this->getDestinationURL('logout'))
+                ;
+        }else{
+            $this->add('HtmlElement',null,'UserMenu')
+                ->setElement('a')
+                ->set('Login')
+                ->setAttr('href',$this->getDestinationURL('authtest'))
+                ;
+        }
     }
     function page_examples($p){
         header('Location: '.$this->pm->base_path.'examples');
