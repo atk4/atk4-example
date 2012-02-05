@@ -22,6 +22,7 @@ class page_index extends Page {
         $button->js('click',$lorem_ipsum->js()->reload());
 
 
+		$this->add('Form')->addField('line','foo')->setNotNull();
 
         // Oh and thanks for giving Agile Toolkit a try! You'll be excited how simple
         // it is to use.
