@@ -1,4 +1,0 @@
-RewriteBase /examples/blog_models/
-RewriteEngine On
-#RewriteRule ^(0-9).*$ index.php [L]
-RewriteRule ^[^\.]*$ index.php [L]

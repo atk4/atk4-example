@@ -69,12 +69,14 @@ INSERT INTO `dvd` VALUES
 CREATE TABLE `customer` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
 
 INSERT INTO `customer` VALUES 
-    (1,'John Smith'),
-    (2,'Peter Taylor');
+    (1,'John Smith','demo','demo'),
+    (2,'Peter Taylor','test','test');
 
 CREATE TABLE `rental` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -90,5 +92,3 @@ INSERT INTO `rental` VALUES
     (1,1,1,'2011-08-21','','N'),
     (2,1,2,'2011-08-18','2011-08-21','Y');
 
-alter table customer add email varchar(255);
-alter table customer add password varchar(255);

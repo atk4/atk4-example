@@ -14,7 +14,8 @@ class Blog extends ApiFrontend {
             ->setParent($this->pathfinder->atk_location);
 
         $menu = $this->add('Menu',null,'Menu');
-        $menu->addMenuItem('Blog','index');
+        $menu->addMenuItem('index','Blog');
+        $menu->addMenuItem($this->api->url('/')->setBaseURL('..'),'Back');
         $menu->addMenuItem('admin');
 
         // I define auth class here, but I am not checking auth yet.
