@@ -47,11 +47,11 @@ class Frontend extends ApiFrontend {
         // If you are using a complex menu, you can re-define
         // it and place in a separate class
         $this->add('Menu',null,'Menu')
-            ->addMenuItem('Welcome','index')
-            ->addMenuItem('Examples','examples')
-            ->addMenuItem('How Do I..?','how')
-            ->addMenuItem('Database Test','dbtest')
-            ->addMenuItem('Auth test','authtest')
+            ->addMenuItem('index','Welcome')
+            ->addMenuItem('examples','Examples')
+            ->addMenuItem('how','How Do I..?')
+            ->addMenuItem('dbtest','Database Test')
+            ->addMenuItem('authtest','Auth test')
             ->addMenuItem('logout')
             ;
 
