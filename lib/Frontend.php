@@ -23,7 +23,7 @@ class Frontend extends ApiFrontend {
         $this->add('jUI');
 
         // Initialize any system-wide javascript libraries here
-        // If you are willing to write custom JavaScritp code,
+        // If you are willing to write custom JavaScript code,
         // place it into templates/js/atk4_univ_ext.js and
         // include it here
         $this->js()
@@ -31,14 +31,14 @@ class Frontend extends ApiFrontend {
             ->_load('ui.atk4_notify')
             ;
 
-        // If you wish to restrict actess to your pages, use BasicAuth class
+        // If you wish to restrict access to your pages, use BasicAuth class
         $this->add('BasicAuth')
             ->allow('demo','demo')
             // use check() and allowPage for white-list based auth checking
             //->check()
             ;
 
-        // This method is executed for ALL the peages you are going to add,
+        // This method is executed for ALL the pages you are going to add,
         // before the page class is loaded. You can put additional checks
         // or initialize additional elements in here which are common to all
         // the pages.
