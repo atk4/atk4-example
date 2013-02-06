@@ -121,7 +121,7 @@ class page_gallery extends Page {
         $field->addButton('Button');
         $field->addComment('Field Comment');
         $field->setAttr('placeholder','placeholder');
-        $field->setNotNull();
+        $field->validateNotNull();
 
         $f->addSubmit();
 
